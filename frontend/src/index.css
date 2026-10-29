@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-ivory: #F4F1E9;
+    --bg-white: #FFFFFF;
+    --text-ink: #111111;
+    --text-muted: #6B6861;
+    --charcoal: #171A1F;
+    --gold: #C6A45A;
+    --steel: #7596C8;
+    --burgundy: #A63D40;
+    --red: #C83232;
+    --border-light: #E2DDD2;
+    --border-subtle: #ECE8DE;
+  }
+
+  body {
+    background-color: var(--bg-ivory);
+    color: var(--text-ink);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Newsreader', Georgia, serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .font-display {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+/* Custom Scrollbar for Dense Tables and Panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #EAE6DC;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8C2B3;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A09A8B;
+}
+
+/* Swiss Editorial Grid Lines */
+.swiss-grid {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+}
+
+.graph-dark-grid {
+  background-color: #0E1015;
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}

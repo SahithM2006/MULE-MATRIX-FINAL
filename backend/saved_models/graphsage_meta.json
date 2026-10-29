@@ -1,0 +1,10 @@
+{
+  "version": "v1.0",
+  "epochs": 30,
+  "train_nodes": 75,
+  "pos_samples": 25,
+  "neg_samples": 50,
+  "loss": 0.0007,
+  "in_dim": 12,
+  "hidden_dim": 32
+}
